@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page - Mediator WS</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="loginform cf">
+		<form name="login" action="login" method="post" accept-charset="utf-8">
+			<ul>
+				<li>
+					<label for="user.email">Email (username)</label>
+					<input type="email" name="user.email" placeholder="yourname@email.com" required>
+				</li>
+				<li>
+					<label for="user.password">Password</label>
+					<input type="password" name="user.password" placeholder="password" required>
+				</li>
+				<li>
+					<input type="submit" value="Login">
+				</li>
+			</ul>
+		</form>
+	</section>
+	<hr/>
+	<p>Register new user:</p>
+	<section class="loginform cf">
+        <form name="register" action="users" method="post" accept-charset="utf-8">
+            <ul>
+                <li>
+                    <label for="user.email">Email (username)</label>
+                    <input type="email" name="user.email" placeholder="yourname@email.com" required>
+                </li>
+                <li>
+                    <label for="user.password">Password</label>
+                    <input type="password" name="user.password" placeholder="password" required>
+                </li>
+                <li>
+                    <label for="password">Confirm password</label>
+                    <input type="password" name="password" placeholder="password" required>
+                </li>
+                <li>
+                    <input type="submit" value="Register">
+                </li>
+            </ul>
+        </form>
+    </section>
+	
+</body>
+</html>
